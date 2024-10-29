@@ -31,10 +31,12 @@ Name: count, dtype: int64
 
 I vissa av kolumnerna har jag ganska stor skilnad i mina värden. T.ex i cap_surface:
 
+```
 y              3244
 s              2556
 f              2320
 g                 4
+```
 
 Här är g = grooves väldigt ovanligt jämfört med de andra värdena. Jag hade förväntat mig
 detta då det finns vissa svampar med ovanliga attribut som ofta är sällsynta jämfört med de
