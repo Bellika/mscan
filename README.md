@@ -1,6 +1,7 @@
 #Problem
 
-Problemet jag vill försöka lösa är att klassificera i fall en svamp är giftig eller ej.
+Problemet jag vill försöka lösa är att klassificera i fall en svamp är giftig eller ej. Eftersom jag 
+måste dela in dem i två kategorier är detta ett klassifieringsproblem. 
 
 #Data
 
@@ -43,7 +44,6 @@ men man kanske vill ta bort viss data som delar flera ovanliga attribut?
 • Vilka datatyper har datat?
 
 Alla kolumner är objekt. Vi arbetar med strängar och har inga numreriska värden.
-
 • Vilka fält i ditt data vill du använda dig av?
 
 Jag kommer börja med att inkludera alla fält för den första modellen. Sedan kommer jag göra 
@@ -57,6 +57,11 @@ att ha med när vi tränar modellen.
 
 Jag kan använda one-hot encoding för de kolumner där datan inte har en naturlig ording, 
 vilket är alla kolumner i det här datasetet. Vissa värden mappar jag själv.
+
+När jag bygger modelllen kommer jag köra supervised learning. Jag behöver inte köra unsupervised 
+då jag redan har labels. Reinforcement passar inte här då vi inte har någon miljö där vi kan 
+belöna/bestraffa val. Jag kommer prova bygga min model med beslutsträd men även prova regrission då det 
+kan finnas tydlig separation i datan. Jag kommer börja med att använda scikit-learn som en första modell.
 
  
 
